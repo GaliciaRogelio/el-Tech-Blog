@@ -3,14 +3,14 @@ const sequelize = require("../config/connection");
 
 // create our Post model
 class Post extends Model {
-  static(body) {
-    Post.findOne({
-      where: {
-        id: body.post_id,
-      },
-      attributes: ["id", "post_text", "title", "created_at"],
-    });
-  }
+  // static(body) {
+  //   Post.findOne({
+  //     where: {
+  //       id: body.post_id,
+  //     },
+  //     attributes: ["id", "post_text", "title", "created_at"],
+  //   });
+  // }
 }
 
 Post.init(
@@ -29,7 +29,7 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [500],
+        len: [1, 300],
       },
     },
     user_id: {

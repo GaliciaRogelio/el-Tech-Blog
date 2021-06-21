@@ -10,16 +10,16 @@
 
   <body>
     <div class="wrapper">
-      <header>
-        <h1>
+      <header class="hero">
+        <h1 class="app-title">
           <a href="/">El Tech Blog</a>
         </h1>
         <nav>
           {{#if loggedIn}}
-          <a href="/dashboard">dashboard</a>
-          <button id="logout" class="btn-no-style">logout</button>
+          <a class="logIn-btn" href="/dashboard">dashboard</a>
+          <button id="logout" class="logIn-btn">logout</button>
           {{else}}
-          <a href="/login">login</a>
+          <a class="logIn-btn" href="/login">login</a>
           {{/if}}
         </nav>
       </header>

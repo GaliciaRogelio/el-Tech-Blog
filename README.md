@@ -5,7 +5,7 @@
   this is a fully responsive blog site where you are able to post and comment posts
 
   # GitHub Links
-  Live Page: 
+  Live Page: https://el-tech-blog.herokuapp.com/
   <br>
   Repository: https://github.com/GaliciaRogelio/el-Tech-Blog
   
