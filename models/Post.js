@@ -29,7 +29,7 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [500, 1],
+        len: [500],
       },
     },
     user_id: {
