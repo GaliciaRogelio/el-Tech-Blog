@@ -1,8 +1,18 @@
 <article class="post" id="card2">
-  <div class="title">
-    <a target="_blank">{{title}}</a>
+  <div class="card-header">
+    <a>{{title}}</a>
+    <div class="by-area">by
+    {{user.username}}
+    on
+    {{format_date created_at}}
+    </div>
+  </div>
+  <div class="body-content">
+    <a>{{post_text}} </a>
   </div>
   <div class="meta">
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    
+    <a href="/post/{{id}}">{{comments.length}}
+      {{format_plural "comment" comments.length}}</a>
   </div>
 </article>

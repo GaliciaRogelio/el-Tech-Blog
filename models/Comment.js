@@ -13,9 +13,9 @@ Comment.init(
     comment_text: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [1, 30],
-      },
+      // validate: {
+      //   len: [30],
+      // },
     },
     user_id: {
       type: DataTypes.INTEGER,
