@@ -169,6 +169,10 @@ main {
   text-align: right;
 }
 
+.title-size {
+  font-size: 22px;
+}
+
 /* card area */
 .card {
   margin: 0 0 20px 0;

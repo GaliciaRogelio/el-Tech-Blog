@@ -2,25 +2,16 @@ const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
 // create our Post model
-class Post extends Model {
-  // static(body) {
-  //   Post.findOne({
-  //     where: {
-  //       id: body.post_id,
-  //     },
-  //     attributes: ["id", "post_text", "title", "created_at"],
-  //   });
-  // }
-}
+class Post extends Model {}
 
 Post.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true,
-    // },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     title: {
       type: DataTypes.STRING,
     
@@ -31,13 +22,13 @@ Post.init(
         len: [1, 300],
       },
     },
-    // user_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     model: "user",
-    //     key: "id",
-    //   },
-    // },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
